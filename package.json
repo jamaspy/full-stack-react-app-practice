@@ -1,0 +1,28 @@
+{
+  "name": "full-stack-react-app-practice",
+  "version": "1.0.0",
+  "description": "practice full stack app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamaspy/full-stack-react-app-practice.git"
+  },
+  "author": "James Aspinall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamaspy/full-stack-react-app-practice/issues"
+  },
+  "homepage": "https://github.com/jamaspy/full-stack-react-app-practice#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "pg": "^7.11.0"
+  }
+}
