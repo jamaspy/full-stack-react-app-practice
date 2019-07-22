@@ -1,5 +1,6 @@
 var { Pool } = require('pg');
 
+const CONNECTION_STRING 
 class Database {
     constructor() {
 
