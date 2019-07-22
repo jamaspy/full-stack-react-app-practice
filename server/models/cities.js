@@ -2,8 +2,8 @@ const db = require('../database')
 
 
 class Cities {
-    static retrieveAll (callback){
-        db.query('SELECT city_name FROM cities', function(error, response) {
+    static retrieveAll (callback) {
+        db.query('SELECT city_name from cities', function(error, response) {
             if(error.error)
                 return callback(error);
             callback(response);
@@ -20,4 +20,4 @@ class Cities {
     }
 }
 
-module.export = Cities
+module.exports = Cities
