@@ -29,3 +29,16 @@ code {
 .weather{
   margin-top: 30px
 }
+
+.bgImg{
+  background-color: #08AEEA;
+background-image: linear-gradient(113deg, #08AEEA 0%, #2AF598 100%);
+height: 100vh;
+color: white;
+}
+
+.box{
+  padding: 10px;
+  width: 650px;
+  margin: 0 auto;
+}

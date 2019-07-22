@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 import {
   Container,
-  Navbar,
-  NavbarBrand,
   Row,
   Jumbotron,
   InputGroup,
@@ -72,32 +70,31 @@ class App extends Component {
 
   render() {
     return (
-      <Container fluid className="centered">
-        <Navbar dark color="dark">
-          <NavbarBrand href="/">MyWeather</NavbarBrand>
-        </Navbar>
+      <Container fluid className="centered bgImg">
+        <div className="box">
+
         <Row>
           <Col>
-            <Jumbotron>
-              <h1 className="display-3">MyWeather</h1>
-              <p className="lead">The current weather for your favorite cities!</p>
+            
+              <h1 className="display-3 mt-5">MyWeather</h1>
+              <p className="lead">The current weather for your favorite cities</p>
               <InputGroup>
                 <Input 
-                  placeholder="New city name..."
+                  placeholder="Add A City To Your Favourites"
                   value={this.state.newCityName}
                   onChange={this.handleInputChange}
                 />
                 <InputGroupAddon addonType="append">
-                  <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
+                  <Button outline color="secondary" onClick={this.handleAddCity}>Add City</Button>
                 </InputGroupAddon>
                 
               </InputGroup>
-            </Jumbotron>
+            
           </Col>
         </Row>
         <Row>
           <Col>
-            <h1 className="display-5">Current Weather</h1>
+            <h1 className="display-5 mt-5">Favourite Cities</h1>
             <FormGroup>
               <Input type="select" onChange={this.handleChangeCity}>
                 { this.state.cityList.length === 0 && <option>No cities added yet.</option> }
@@ -108,6 +105,7 @@ class App extends Component {
             </FormGroup>
           </Col>
         </Row>
+        </div>
         <Weather data={this.state.weather}/>
       </Container>
     );
